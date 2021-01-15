@@ -36,6 +36,7 @@ RUN apk add --no-cache \
         tcpdump \
         tshark \
         vim \
-	tcptraceroute
+	tcptraceroute \
+	screen
 
 COPY --from=builder /build/htop-master/dist/bin/htop /usr/local/bin/
